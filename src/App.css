@@ -1,0 +1,99 @@
+.app {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.input-section, .filter-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #444;
+  color: #fff;
+}
+
+.input-section input::placeholder {
+  color: #bbb;
+}
+
+.input-section button, .filter-section button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-section button:hover, .filter-section button:hover {
+  background-color: #4ab2d1;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-item span {
+  cursor: pointer;
+}
+
+.todo-item div {
+  display: flex;
+}
+
+.todo-item div button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e44d26;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item div button:hover {
+  background-color: #c0392b;
+}
+
+.todo-item div button:first-child {
+  background-color: #3498db;
+}
+
+.todo-item div button:first-child:hover {
+  background-color: #2980b9;
+}
